@@ -1,6 +1,6 @@
 # GPTman
 
-This script uses ChatGPT to generate optimized documentation for Unix command-line utilities, libraries, system calls and more. Designed to be an AI-powered alternative to the 'man' utlity.
+A simple tool that is designed to be an AI-powered alternative to the 'man' utility on Unix.
 
 ## Installation
 
