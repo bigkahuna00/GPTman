@@ -1,6 +1,6 @@
 # GPTman
 
-A simple tool that is designed to be an AI-powered alternative to man pages on *Nix-systems.
+A simple tool that is designed to be an AI-powered alternative to man pages.
 
 ## 🌟 Advantages compared to man pages (as written by GPT-4)
 
