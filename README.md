@@ -2,7 +2,7 @@
 
 A simple tool that is designed to be an AI-powered alternative to man pages.
 
-## 🌟 Advantages compared to man pages (as written by GPT-4)
+## 🌟 Advantages compared to traditional man pages (as written by GPT-4)
 
 1. **User-friendly language**: Generates documentation using natural language, making it easier for users, especially beginners, to understand the purpose and functionality of Unix utilities.
 2. **Reduced technical jargon**: Avoids excessive technical terminology, making the documentation more accessible to a wider range of users.
