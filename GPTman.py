@@ -26,7 +26,7 @@ def GPTman(user_prompt):
 
 def main():
 	if len(sys.argv) < 2:
-		print(f"""Usage: python3 {sys.argv[0]} [query]
+		print(f"""Usage: python3 {sys.argv[0]} <query>
 
 Description: 
 This script uses the ChatGPT to generate optimized documentation for Unix command-line utilities, libraries, system calls and more.
