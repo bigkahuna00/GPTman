@@ -1,3 +1,4 @@
+import os
 import sys
 import openai
 
@@ -7,13 +8,21 @@ base_prompt = "You are a language model designed to provide optimized documentat
 
 model = "gpt-3.5-turbo"
 
+#Check if the API key is set
+if not openai.api_key:
+	if os.getenv("OPENAI_API_KEY") == None:
+		print("You must have an OpenAI API key to use this script. Please set one as an environment variable or include it in the 'openai_api_key' variable of the script.")
+		sys.exit()
+	else:
+		openai.api_key = os.getenv("OPENAI_API_KEY")	
+
 def GPTman(user_prompt):
 
 	final_prompt = base_prompt + user_prompt
 		
 	query = openai.ChatCompletion.create(model=model, messages=[{"role":"system", "content":base_prompt}, {"role":"user", "content":user_prompt}])
 	
-	print(query.choices[0].message.content)
+	print(query.choices[0].message.content.strip())
 
 def main():
 	if len(sys.argv) < 2:
